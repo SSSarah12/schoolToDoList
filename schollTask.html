@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="schoolTask.css">
+    <!--To import icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>School Task Manager</title>
+</head>
+<body>
+
+
+    <section class="main" id="main">
+
+        <section class="Header">
+
+            <h1>School Task Manager</h1>
+            <p id="message">Keep it up!</p>
+
+            <div class="progress" id="progress">
+                <div class="AddToProgress" id="AddToProgress"></div>
+            </div>
+
+            <div id="count" class="count">
+                <span id="done">0 </span> /  <span id="totalTasks"> 0 </span>
+            </div>
+
+        </section>
+
+        <section class="Tasks" id="Tasks">
+            <input type="text" id="userContent" class="userContent" placeholder="Write your task">
+            <button id="Add" class="Add" onclick="AddTasks()">+</button>
+             <br>
+            
+        </section>
+         
+        <div class="DisplayTask" id="DisplayTask">
+                <!-- in javascript AddTasks I add element Div with 
+                 id=TheTask class=TheTask it will be added in the flex of THIS DIV -->
+            </div>
+    </section>
+<!--     
+    <script>
+
+        const range = document.getElementByid("AddToProgress");
+
+        //whenever I click the checkbox on the tasks
+        //I initilaize it width=0%;
+
+        percentage = 100% / the number of tasks;
+
+        //number of tasks is (count++) each time + is clicked so inside its function I add a counter
+
+        function add(){
+           range.style.width += ${percentage}%;
+        }
+
+        if(range.style.width == 100%){
+           p#message.textContent = "You finished!"
+        }
+
+    </script> -->
+
+    <script src="schoolTask.js"></script>
+
+</body>
+</html>
